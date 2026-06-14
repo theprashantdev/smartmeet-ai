@@ -1,8 +1,8 @@
 from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
-    openrouter_api_key: str
-    database_url: str
+    openrouter_api_key: str = "dummy"
+    database_url: str = "sqlite+aiosqlite:///./smartmeet.db"
     smtp_host: str = "smtp.gmail.com"
     smtp_port: int = 587
     smtp_user: str = ""
