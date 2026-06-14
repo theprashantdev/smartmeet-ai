@@ -20,17 +20,8 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install system dependencies
-        run: sudo apt-get install -y ffmpeg
-
-      - name: Install Python dependencies
+      - name: Install dependencies (no whisper in CI)
         run: pip install -r requirements.txt
 
       - name: Run tests
-        env:
-          OPENROUTER_API_KEY: dummy_key_for_ci
-          DATABASE_URL: sqlite+aiosqlite:///:memory:
-          SMTP_USER: ''
-          SMTP_PASSWORD: ''
-          WHISPER_MODEL: base
         run: pytest --tb=short -v
