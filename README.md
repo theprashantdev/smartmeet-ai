@@ -1,9 +1,12 @@
 # SmartMeet AI
 
-Live Demo:
+Demo currently unavailable.
+Use API docs for evaluation.
+
+API Base URL:
 https://smartmeet-ai-yxjr.onrender.com
 
-API Docs:
+API Documentation:
 https://smartmeet-ai-yxjr.onrender.com/docs
 > Upload a meeting audio file. Get back a transcript, action items with owners, decisions made, and an optional email summary — in under 60 seconds.
 
